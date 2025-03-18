@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+         div {
+            width: 120px;
+            height: 120px;
+            margin-top: 15px;
+        }
+        .class1 {
+            background-color: red;
+            animation: class1 2s ease-in-out 0s infinite alternate;
+        }
+        @keyframes class1 {
+            from {
+                background-color: red;
+                transform: rotate(0);
+            }
+            to {
+                background-color: blue;
+                transform: rotate(230deg);
+            }
+        }
+        .class2 {
+            background-color: blue;
+            animation: class2 2s ease-in-out 0s infinite;
+        }
+        @keyframes class2 {
+            0% {
+                background-color: blue;
+                transform: translate(0px, 0px);
+            }
+            50% {
+                background-color: yellow;
+                transform: translate(200px, 0);
+            }
+            70% {
+                background-color: red;
+                transform: translate(0, 100px);
+            }
+        }
+        .slate {
+            background-color: green;
+            transition: all 1s ease-in-out 0s;
+        }
+        .class4 {
+            background-color: yellow;
+            transition: all 1s ease-in-out 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="class1"></div>
+    <div class="class2"></div>
+    <div class="slate"></div>
+    <div class="class4"></div>
+</body>
+</html>

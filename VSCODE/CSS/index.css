@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    background-color: white;
+    padding: 40px 0;
+}
+.custom {
+    width: 90%;
+    margin: auto;
+}
+nav {
+    /* width: 90%;
+    margin: auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+li {
+    margin: 0 40px;
+}
+li:hover {
+    transform: scale(1);
+    animation:spacing 0.5s infinite ease-in-out ;
+    color: blue;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+/* .btn1 {
+    background-color: green;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+} */
+button {
+    background-color: green;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.btn1:hover {
+    transform: scale(1);
+    animation: spacing 3s ease-in-out infinite;
+    /* background-color: white;
+    color: green; */
+}
+h4 {
+    cursor: alias;
+}
+
+@keyframes spacing {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+
+.logo {
+    cursor: pointer;
+    position: relative;
+}
+
+/* .logo h1:hover {
+    font-family: arial, sans-serif;
+    font-size: 30px;
+    color: blue;
+    margin: 0;
+    transform: scale(1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: spacing 2s ease-in-out alternate infinite;
+} */
+
+.logo h1:hover {
+    text-shadow: 0 0 5px blue, 0 0 15px red;
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { text-shadow: 0 0 5px blue, 0 0 15px red;}
+    50% { text-shadow: 0 0 10px blue, 0 0 20px red, 0 0 30px rgba(0, 122, 204, 0.5);}
+    100% { text-shadow: 0 0 2px blue, 0 0 10px red;}
+}
+
+/* @keyframes spacing {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+} */
+ img {
+    width: 100%;
+    height: 650px;
+    
+}
+.p1 {
+    text-decoration: underline;
+    margin-left: 630px;
+    margin-top: 300px;
+    cursor: pointer;
+    color: blue;
+}
+.p1:hover {
+    /* transform: scale(1s); */
+    animation: fadeIn 1s alternate ease-in-out;
+    color: blue;
+}
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 2;}
+}
+.p2 {
+    margin-left: 630px;
+}
+.p3 {
+    width: 600px;
+    /* max-width: 500px; */
+    height: 50px;
+    margin-top: -250px;
+}
+.p4 {
+    margin-top: 700px;
+    margin-left: 600px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
+.p4:hover {
+    animation: fadeIn 1s alternate ease-in-out;
+    /* color: blue; */
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 2;}
+}
+.p5 {
+    text-align: center;
+    padding: 20px;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-left: 230px;
+    margin-bottom: 30px;
+}
+.biggest {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.image-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+.image-container img {
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+.tech-image {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.p6 {
+    text-decoration: underline;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: blue;
+}
+.p6:hover {
+    animation: fadeIn 1s alternate ease-in-out;
+    color: blue;
+}
+.btn2 {
+    margin-top: 30px;
+    border: none;
+    background-color: green;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.btn2:hover {
+    animation: bounceIn 1s ease-in-out;
+}
+@keyframes bounceIn {
+    0% {transform: scale(1); opacity: 0;}
+    50% {transform: scale(1.2); opacity: 0.8;}
+    100% {transform: scale(1); opacity: 1;}
+}
+.p8 {
+    margin-left: 580px;
+    margin-top: 80px;
+    color: blue;
+      
+}
+.p8:hover {
+    color: blue;
+    animation: fadeIn 1s alternate ease-in-out;
+    cursor: pointer;
+}
+.p9 {
+    text-align: center;
+    padding: 20px;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-left: 230px;
+    margin-bottom: 30px;
+}
+.small {
+    display: block;
+}
+.small img {
+    width: 30%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+.smaller {
+    border-radius: 500px 500px;
+    margin-left: 500px;
+}
+.p10 {
+    margin-left: 670px;
+    margin-top: 30px;
+    color: blue;
+    cursor: pointer;
+}
+.p11 {
+    text-align: center;
+    padding: 20px;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-left: 230px;
+    margin-bottom: 30px;
+}
+.circle-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+    /* height: 100vh; */
+    /* background-color: #f0f0f0; */
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000080;
+    border-radius: 50%;
+    /* margin-left: 30px; */
+}
+.circle-filled {
+    background-color: #000080;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000080;
+    border-radius: 50%;
+}
+.Container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.p12 {
+    margin-top: 100px;
+    margin-left: 675px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+    margin-bottom: 50px;
+}
+.p12:hover {
+    animation: fadeIn 1s alternate ease-in-out;
+}
+.p13 {
+    margin-top: 100px;
+    margin-left: 455px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+    margin-bottom: 20px;
+}
+.line {
+    border-bottom: 2px solid blue;
+    width: 900px;
+    height: 0;
+    margin-left: 245px;
+}
+.p14 {
+    margin-top: 40px;
+    margin-left: 245px;
+    cursor: pointer;
+}
+.dropdown-arrow {
+    font-size: 16px;
+    margin-left: 1125px;
+    /* margin-bottom: 50px; */
+    color: blue;
+    cursor: pointer;
+}
+.big-container {
+    margin-top: 40px;
+}
+.square {
+    width: 100px;
+    height: 80px;
+    background-color: blue;
+    /* margin: 20px auto; */
+}
+.square-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 60px;
+    opacity: 0.3;
+}
+.p15 {
+    /* text-size-adjust: 100px; */
+    margin-top: 5px;
+    margin-left: 50px;
+    color: blue;
+    cursor: pointer;
+}
+.p15:hover {
+    animation: fadeIn 1s alternate ease-in-out;
+}
+.p16 {
+    text-align: left;
+    /* display: block; */
+    /* margin-right: 900px; */
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.p17 {
+    color: blue;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.p17:hover {
+    animation: fadeIn 1s alternate ease-in-out;
+}
+/* .p18 {
+    color: blue;
+    margin-top: -100px;
+    margin-left: 2px;
+} */
+.p19 {
+    color: blue;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.p19:hover {
+    animation: fadeIn 1s alternate ease-in-out;
+}
+i {
+    font-size: 40px;
+    margin-top: 30px;
+    color: blue;
+    cursor: pointer;
+}
+.p18 {
+    margin-left: 50px;
+    margin-top: -3px;
+    cursor: pointer;
+    color: blue;
+}
+.footer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 100px;
+}
+h3 {
+    margin-top: 40px;
+}
+.p20 {
+    color: blue;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.p20:hover {
+    animation: fadeIn 1s alternate ease-in-out;
+}
+.line1 {
+    border-bottom: 2px solid blue;
+    width: 1350px;
+    height: 0;
+    /* margin-left: 245px; */
+    margin-top: 90px;
+}
+.p21 {
+   text-align: center;
+   cursor: alias;
+}
+.container2 {
+    margin-left: 645px;
+}
+h3 {
+    cursor: alias;
+}

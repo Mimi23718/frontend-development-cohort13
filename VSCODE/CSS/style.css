@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.logo {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.circle-bg {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(135deg, blue, #00a4ff);
+}
+
+.v-shape {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 80px solid blue;
+    top: 60px;
+    left: 80px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+    box-shadow: 2px 2px 5px rgba( 0, 0, 0, 0.3);
+}
+
+.v-shape:hover {
+    transform: rotate(45deg) scale(1.1);
+}
+
+.dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    bottom: 20px;
+    left: 90px;
+}
